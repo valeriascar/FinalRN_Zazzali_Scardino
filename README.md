@@ -1,8 +1,10 @@
 # FinalRN_Zazzali_Scardino
 
-En este trabajo se busca poder clasificar a compuestos químicos de interés farmacéutico según su actividad tóxica o no tóxica. Para que un medicamento llegue finalmente al mercado se requieren más de 10 años y una gran inversión de dinero. La motivación se basa en lograr, mediante un modelo de redes neuronales, reducir tiempos y costos en las primeras etapas de la investigación de un nuevo medicamento.
+En este trabajo se busca poder clasificar compuestos químicos de interés farmacéutico según su actividad tóxica o no tóxica. Para que un medicamento llegue finalmente al mercado se requieren más de 10 años y una gran inversión de dinero. La motivación se basa en lograr, mediante un modelo de redes neuronales, reducir tiempos y costos en las primeras etapas de la investigación de un nuevo medicamento.
 
 Para esto se utilizó el dataset público de la competencia Tox 21 Data Challenge llevada a cabo en 2014. La misma buscó promover el uso de modelos de machine learning para la predicción de toxicidad de compuestos químicos. De los 12 efectos tóxicos evaluados por la competencia, se elige 1 para simplificar el trabajo. En este caso elegimos el efecto NR-ER que es una respuesta tóxica del receptor nuclear. Se eligió en base a su valor de activos/total de compuestos siendo éste un intermedio entre los valores de los 12 efectos.
+
+En este repositorio se encuentran los siguientes archivos:
 
 tox21_DescriptorsCalc.ipynb permite calcular una serie de descriptores predefinidos que servirán como input para la red.
 
@@ -13,6 +15,8 @@ nr-er.sdf es el dataset crudo para ese efecto tóxico otorgado por la competenci
 nr-er_removed.sdf es el dataset dado por la competencia y modificado para eliminar los compuestos agregados que no son de interés para la clasificación. 
 
 nr-er_activity.txt contiene los valores target otorgados por la competencia.
+
+Descriptores_nr_er.csv contiene los descriptores ya calculados para el dataset de train.
 
 Descriptores_test.csv contiene los descriptores ya calculados para el dataset de test.
 
