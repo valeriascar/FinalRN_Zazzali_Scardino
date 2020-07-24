@@ -23,3 +23,5 @@ Descriptores_test.csv contiene los descriptores ya calculados para el dataset de
 nr-er_test_activity.txt son los targets del dataset de test para calcular los resultados finales. 
 
 Feature_Importance.ipynb es la notebook que sirve para calcular qué features o características de los compuestos tienen más peso a la hora de realizar predicciones por el modelo de Keras.
+
+tox21_Model2.ipynb es la notebook corregida para la segunda entrega del trabajo. Incluye búsqueda de hiperparámetros utilizando PR-AUC score y cálculo de Fbeta score y umbrales óptimos para la mejor separación de clases.
